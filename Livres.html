@@ -1,75 +1,205 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-<title>
-TI14-Library - Livres
-</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ISET Library - Livres</title>
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
- <header>
+
+    <!-- HEADER -->
+
+    <header>
 
         <div class="logo">
+
             <img src="images/logo.png" alt="Logo ISET">
+
             <h1>ISET Library</h1>
+
         </div>
 
+
         <nav>
+
             <a href="index.html">Accueil</a>
+
             <a href="livres.html">Livres</a>
+
             <a href="contact.html">Contact</a>
+
         </nav>
 
     </header>
-<main>
-<section class="book-section">
-<h2>Liste des livres</h2>
- <p>
+
+
+    <!-- CONTENU -->
+
+    <main>
+
+        <section class="books-section">
+
+            <h2>Liste des livres</h2>
+
+            <p>
                 Découvrez les livres disponibles
                 dans notre bibliothèque.
             </p>
-			<!--Table--!>
-	<table>
-	<thead>
-	<tr>
-	<th>ID</th>
-	<th>Titre</th>
-	<th>Auteur</th>
-	<th>Categorie</th>
-	<th>Annee</th>
-	<th>Disponibilite</th>
 
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-	<td>1</td>
-	<td>HTML</td>
-	<td>Nacef</td>
-	<td>Web</td>
-	<td>2026</td>
-	<td class="available">Disponible</td>
-	
-	</tr>
-	<tr>
-	<td>2</td>
-	<td>JAVASCRIPT</td>
-	<td>Nacef</td>
-	<td>JAVA</td>
-	<td>2026</td>
-	<td class="unavailable">Indisponible</td>
-	
-	</tr>
-	</tbody>
-	</table>
-</section>
-</main>
+
+            <!-- TABLEAU -->
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Titre</th>
+
+                        <th>Auteur</th>
+
+                        <th>Catégorie</th>
+
+                        <th>Année</th>
+
+                        <th>Disponibilité</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>HTML & CSS</td>
+
+                        <td>John Doe</td>
+
+                        <td>Web</td>
+
+                        <td>2024</td>
+
+                        <td class="available">
+                            Disponible
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>2</td>
+
+                        <td>JavaScript</td>
+
+                        <td>Ahmed Ali</td>
+
+                        <td>Web</td>
+
+                        <td>2023</td>
+
+                        <td class="unavailable">
+                            Emprunté
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>3</td>
+
+                        <td>Réseaux informatiques</td>
+
+                        <td>Sami Ben Ali</td>
+
+                        <td>Réseaux</td>
+
+                        <td>2022</td>
+
+                        <td class="available">
+                            Disponible
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>4</td>
+
+                        <td>SQL pour débutants</td>
+
+                        <td>Sara Trabelsi</td>
+
+                        <td>Base de données</td>
+
+                        <td>2024</td>
+
+                        <td class="available">
+                            Disponible
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>5</td>
+
+                        <td>Python</td>
+
+                        <td>Mohamed Salah</td>
+
+                        <td>Programmation</td>
+
+                        <td>2023</td>
+
+                        <td class="unavailable">
+                            Emprunté
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; <span id="year">2026</span>
+            ISET Library - Tous droits réservés
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
 </body>
-<footer>
-<p>
-&copy; <span id="year">2026</span>
-TI14 Library - Tous les droits reserves
-</p>
-</footer>
+
 </html>
