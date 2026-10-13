@@ -1,0 +1,534 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body { 
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #333;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #1e3a5f;
+
+    color: white;
+
+    padding: 20px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.logo img {
+    width: 50px;
+
+    height: 50px;
+
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 25px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    flex: 1;
+
+    width: 100%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+
+    color: #1e3a5f;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+
+    background-color: #1e3a5f;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #16304f;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories-section {
+    padding: 60px 8%;
+
+    text-align: center;
+}
+
+.categories-section h2 {
+    color: #1e3a5f;
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
+
+.categories {
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: white;
+
+    width: 220px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.card h3 {
+    color: #1e3a5f;
+
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   BOOKS
+========================= */
+
+.books-section {
+    padding: 60px 5%;
+
+    text-align: center;
+}
+
+
+.books-section h2 {
+    font-size: 32px;
+
+    color: #1e3a5f;
+
+    margin-bottom: 15px;
+}
+
+
+.books-section > p {
+    margin-bottom: 30px;
+}
+
+
+/* TABLE */
+
+table {
+    width: 90%;
+
+    margin: auto;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+
+th,
+td {
+    border: 1px solid #ccc;
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+
+th {
+    background-color: #1e3a5f;
+
+    color: white;
+}
+
+
+tbody tr:hover {
+    background-color: #f0f4f8;
+}
+
+
+/* DISPONIBILITE */
+
+.available {
+    color: green;
+
+    font-weight: bold;
+}
+
+
+.unavailable {
+    color: red;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    width: 60%;
+
+    margin: 50px auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-section h2 {
+    text-align: center;
+
+    color: #1e3a5f;
+
+    margin-bottom: 15px;
+
+    font-size: 32px;
+}
+
+
+.contact-section > p {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORMULAIRE
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #1e3a5f;
+}
+
+
+/* =========================
+   COMPTEUR
+========================= */
+
+#counter {
+    margin-top: 5px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   BOUTONS FORMULAIRE
+========================= */
+
+.buttons {
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    margin-top: 25px;
+}
+
+
+.buttons button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.buttons button[type="submit"] {
+    background-color: #1e3a5f;
+
+    color: white;
+}
+
+
+.buttons button[type="reset"] {
+    background-color: #ccc;
+
+    color: #333;
+}
+
+
+.buttons button:hover {
+    opacity: 0.85;
+}
+
+
+/* RESULTAT */
+
+#result {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #1e3a5f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: auto;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+
+    nav {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+
+    .categories {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .card {
+        width: 90%;
+    }
+
+
+    .books-section {
+        overflow-x: auto;
+    }
+
+
+    table {
+        width: 800px;
+    }
+
+
+    .contact-section {
+        width: 90%;
+
+        padding: 25px;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+    }
+
+}
